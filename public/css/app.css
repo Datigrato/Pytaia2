@@ -1,0 +1,356 @@
+
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  z-index: 1000;
+}
+
+.top-header h1 {
+  color: #1e3a8a;
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.top-header p {
+  color: #4b5563;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    padding-top: 110px;
+    min-height: 100vh;
+    background: #f3f6fb;
+    display: flex;
+    color: #1f2937;
+  }
+  
+  .sidebar {
+    width: 280px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .logo-area h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  
+  .logo-area p,
+  .sidebar-footer {
+    color: #dbeafe;
+    line-height: 1.5;
+  }
+  
+  .menu {
+    margin-top: 48px;
+  }
+  
+  .menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .menu a:hover,
+  .menu a.active {
+    background: rgba(255, 255, 255, 0.18);
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  }
+  
+  .login-card h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  
+  .subtitle {
+    color: #6b7280;
+    margin-bottom: 28px;
+  }
+  
+  .input-group {
+    margin-bottom: 18px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  
+  .options a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-login {
+    width: 100%;
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-login:hover {
+    background: #1d4ed8;
+  }
+  
+  .create-account-mobile {
+    display: none;
+    text-align: center;
+    margin-top: 22px;
+  }
+  
+  .create-account-mobile a {
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      min-height: auto;
+    }
+  
+    .sidebar-footer {
+      display: none;
+    }
+  
+    .create-account-mobile {
+      display: block;
+    }
+  }
+  .form-section-title {
+    margin: 24px 0 16px;
+    color: #1e3a8a;
+    font-size: 20px;
+  }
+  
+  .input-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  \\cpf\\
+  .erro {
+    border: 2px solid red !important;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  #erro-email {
+    color: red;
+    margin-top: 5px;
+  }
+  \\cadastro\\
+
+  .cadastrobody{
+    background: linear-gradient(135deg, #eff6ff, #f8fafc);
+  }
+  .main-content {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 1400px;  
+    background: #ffffff;  
+    padding: 50px;  
+    border-radius: 28px;  
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+  }
+  
+  .cadastro-form {
+    margin-top: 28px;
+  }
+  
+  .form-grid {
+    display: grid;
+  
+    grid-template-columns:
+      repeat(auto-fit, minmax(320px, 1fr));
+  
+    gap: 24px;
+  }
+  
+  .formacoes-grid {
+    display: grid;
+  
+    grid-template-columns:
+      repeat(auto-fit, minmax(350px, 1fr));
+  
+    gap: 24px;
+  }
+  
+  .full {
+    grid-column: span 2;
+  }
+  
+  .input-group label,
+  .formation-card label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 8px;
+  }
+  
+  .input-group input,
+  .input-group select,
+  .formation-card input,
+  .formation-card select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    background: #f8fafc;
+    font-size: 15px;
+    color: #0f172a;
+    outline: none;
+    transition: 0.25s;
+  }
+  
+  .input-group input:focus,
+  .input-group select:focus,
+  .formation-card input:focus,
+  .formation-card select:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+  }
+  
+  .form-section-title {
+    margin: 36px 0 20px;
+    padding-left: 12px;
+    border-left: 5px solid #2563eb;
+    color: #1e3a8a;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  
+  .formation-card {
+    background: linear-gradient(180deg, #ffffff, #f8fafc);
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+  }
+  
+  .formation-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1);
+    transition: 0.25s;
+  }
+  
+  .formation-card select {
+    margin-bottom: 12px;
+  }
+  
+  .btn-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+  }
+
+  .btn-login {
+    margin-top: 32px;
+    width: 30%;
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+  
+  .btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.35);
+  }
+    
+  @media (max-width: 768px) {
+    .login-card {
+      max-width: 100%;
+      padding: 28px;
+      border-radius: 18px;
+    }
+  
+    .form-grid,
+    .formacoes-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .full {
+      grid-column: span 1;
+    }
+  }

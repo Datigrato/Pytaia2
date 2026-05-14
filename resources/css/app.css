@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: #f3f6fb;
+    display: flex;
+    color: #1f2937;
+  }
+  
+  .sidebar {
+    width: 280px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .logo-area h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  
+  .logo-area p,
+  .sidebar-footer {
+    color: #dbeafe;
+    line-height: 1.5;
+  }
+  
+  .menu {
+    margin-top: 48px;
+  }
+  
+  .menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .menu a:hover,
+  .menu a.active {
+    background: rgba(255, 255, 255, 0.18);
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+  }
+  
+  .login-card {
+    max-width: 120px;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  }
+  
+  .login-card h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  
+  .subtitle {
+    color: #6b7280;
+    margin-bottom: 28px;
+  }
+  
+  .input-group {
+    margin-bottom: 18px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  
+  .options a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-login {
+    width: 100%;
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-login:hover {
+    background: #1d4ed8;
+  }
+  
+  .create-account-mobile {
+    display: none;
+    text-align: center;
+    margin-top: 22px;
+  }
+  
+  .create-account-mobile a {
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      min-height: auto;
+    }
+  
+    .sidebar-footer {
+      display: none;
+    }
+  
+    .create-account-mobile {
+      display: block;
+    }
+  }
